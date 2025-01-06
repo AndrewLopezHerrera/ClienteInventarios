@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from '../inventario.module.css';
+import styles from '../seleccionar.module.css';
 
 const ProductoDetalle = () => {
   const [producto, setProducto] = useState(null);
