@@ -110,7 +110,7 @@ const Ventas = () => {
         </thead>
         <tbody>
           {ventas.map((venta) => (
-            <tr>
+            <tr key={venta.ID}>
               <td>{venta.ID}</td>
               <td>{venta.FechaFactura}</td>
               <td>
