@@ -12,7 +12,7 @@ const Eliminar = () => {
   };
 
   const eliminarProducto = () => {
-    fetch('http://localhost:4000/EliminarProducto', {
+    fetch('http://172.203.140.102:4000/EliminarProducto', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

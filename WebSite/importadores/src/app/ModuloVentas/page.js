@@ -13,7 +13,7 @@ const Ventas = () => {
   const [montoFinal, setmontoFinal] = useState(null);
 
   const mostrarFacturas = () => {
-    fetch('http://localhost:4000/ConsultarVentas', {
+    fetch('http://172.203.140.102:4000/ConsultarVentas', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ const Ventas = () => {
     setFechaFinal(null);
     setMontoInicial(null);
     setmontoFinal(null);
-    fetch('http://localhost:4000/LimpiarConsultaVentas', {
+    fetch('http://172.203.140.102:4000/LimpiarConsultaVentas', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

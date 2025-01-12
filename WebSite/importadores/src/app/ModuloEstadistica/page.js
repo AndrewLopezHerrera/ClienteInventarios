@@ -21,7 +21,7 @@ const Estadisticas = () => {
   const [top5ProveedoresOrdenes, setTop5ProveedoresOrdenes] = useState([]);
 
   const mostrarProveedores = () => {
-    fetch('http://localhost:4000/MostrarEstadisticasProveedores', {
+    fetch('http://172.203.140.102:4000/MostrarEstadisticasProveedores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const Estadisticas = () => {
   };
 
   const mostrarClientes = () => {
-    fetch('http://localhost:4000/MostrarEstadisticasClientes', {
+    fetch('http://172.203.140.102:4000/MostrarEstadisticasClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const Estadisticas = () => {
   };
 
   const mostrarTop5ProductosGanancia = () => {
-    fetch('http://localhost:4000/MostrarEstadisticasClientes', {
+    fetch('http://172.203.140.102:4000/MostrarEstadisticasClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const Estadisticas = () => {
   }
 
   const mostrarTop5ClientesFacturas = () => {
-    fetch('http://localhost:4000/MostrarEstadisticasClientes', {
+    fetch('http://172.203.140.102:4000/MostrarEstadisticasClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const Estadisticas = () => {
   }
 
   const mostrarTop5ProveedoresOrdenes = () => {
-    fetch('http://localhost:4000/MostrarEstadisticasClientes', {
+    fetch('http://172.203.140.102:4000/MostrarEstadisticasClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

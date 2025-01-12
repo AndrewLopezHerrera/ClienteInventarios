@@ -121,7 +121,7 @@ const Insertar = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:4000/ActualizarProducto', {
+      const res = await fetch('http://172.203.140.102:4000/ActualizarProducto', {
         method: 'POST',
         body: data, // Enviar FormData en lugar de JSON
       });
