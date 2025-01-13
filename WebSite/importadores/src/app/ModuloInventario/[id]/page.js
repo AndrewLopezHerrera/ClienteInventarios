@@ -12,7 +12,7 @@ const ProductoDetalle = () => {
     const nombreArchivoActual = partesRuta[partesRuta.length - 1];
     const idActual = parseInt(nombreArchivoActual);
     if (idActual) {
-      fetch(`http://localhost:4000/ConsultarProductoEspecifico`, {
+      fetch(`http://172.203.140.102:4000/ConsultarProductoEspecifico`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

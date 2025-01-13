@@ -8,7 +8,7 @@ const ClientesPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const mostrarClientes = () => {
-    fetch('http://localhost:4000/ConsultarClientes', {
+    fetch('http://172.203.140.102:4000/ConsultarClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ const ClientesPage = () => {
   const limpiarFiltros = () => {
     setSearchTerm('');
     setClientes([]);
-    fetch('http://localhost:4000/LimpiarConsultaClientes', {
+    fetch('http://172.203.140.102:4000/LimpiarConsultaClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
