@@ -11,7 +11,7 @@ const ClienteDetalle = ({ id }) => {
     const nombreArchivoActual = partesRuta[partesRuta.length - 1];
     const idActual = parseInt(nombreArchivoActual);
     if (idActual) {
-      fetch(`http://172.203.140.102:4000/ConsultarClientesEspecifico`, {
+      fetch(`http://localhost:4000/ConsultarClientesEspecifico`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
