@@ -51,7 +51,7 @@ const ClienteDetalle = ({ id }) => {
 
       <h2 className={styles.locationTitle}>Ubicación</h2>
       <iframe
-        src={`httpss://maps.google.com/maps?q=${cliente.Localizacion.points[0].lat},${cliente.Localizacion.points[0].lng}&z=15&output=embed`}
+        src={`https://maps.google.com/maps?q=${cliente.Localizacion.points[0].lat},${cliente.Localizacion.points[0].lng}&z=15&output=embed`}
         className={styles.iframe}
       ></iframe>
     </div>

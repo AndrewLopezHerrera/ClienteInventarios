@@ -49,7 +49,7 @@ const ProveedorDetalle = () => {
         <div className={styles.mapa}>
           {/* Mapa con la localización */}
           <iframe
-            src={`httpss://maps.google.com/maps?q=${proveedor.Localizacion.points[0].lat},${proveedor.Localizacion.points[0].lng}&z=15&output=embed`}
+            src={`https://maps.google.com/maps?q=${proveedor.Localizacion.points[0].lat},${proveedor.Localizacion.points[0].lng}&z=15&output=embed`}
             className={styles.iframe}
             allowFullScreen=""
             loading="lazy"
