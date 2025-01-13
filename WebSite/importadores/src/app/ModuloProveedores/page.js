@@ -10,7 +10,7 @@ const Proveedores = () => {
   const [categoria, setCategoria] = useState('')
 
   const mostrarProveedores = () => {
-    fetch('http://172.203.140.102:4000/ConsultarProveedores', {
+    fetch('https://172.203.140.102:4000/ConsultarProveedores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const Proveedores = () => {
     setNombre('');
     setCategoria('');
     setProveedores([]);
-    fetch('http://172.203.140.102:4000/LimpiarConsultaProveedores', {
+    fetch('https://172.203.140.102:4000/LimpiarConsultaProveedores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ const FacturaDetalle = () => {
     const idActual = parseInt(nombreArchivoActual);
     setId(idActual);
     if (idActual) {
-      fetch(`http://172.203.140.102:4000/ConsultarVentaEspecifica`, {
+      fetch(`https://172.203.140.102:4000/ConsultarVentaEspecifica`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

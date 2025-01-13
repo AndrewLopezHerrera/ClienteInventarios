@@ -10,7 +10,7 @@ const Inventarios = () => {
   const [grupo, setGrupo] = useState('');
 
   const mostrarInventario = () => {
-    fetch('http://172.203.140.102:4000/ConsultarProductos', {
+    fetch('https://172.203.140.102:4000/ConsultarProductos', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const Inventarios = () => {
     setNombre('');
     setGrupo('');
     setProductos([]);
-    fetch('http://172.203.140.102:4000/LimpiarConsultaProductos', {
+    fetch('https://172.203.140.102:4000/LimpiarConsultaProductos', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

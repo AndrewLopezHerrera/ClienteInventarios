@@ -11,7 +11,7 @@ const ClienteDetalle = ({ id }) => {
     const nombreArchivoActual = partesRuta[partesRuta.length - 1];
     const idActual = parseInt(nombreArchivoActual);
     if (idActual) {
-      fetch(`http://172.203.140.102:4000/ConsultarClientesEspecifico`, {
+      fetch(`https://172.203.140.102:4000/ConsultarClientesEspecifico`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const ClienteDetalle = ({ id }) => {
 
       <h2 className={styles.locationTitle}>Ubicación</h2>
       <iframe
-        src={`https://maps.google.com/maps?q=${cliente.Localizacion.points[0].lat},${cliente.Localizacion.points[0].lng}&z=15&output=embed`}
+        src={`httpss://maps.google.com/maps?q=${cliente.Localizacion.points[0].lat},${cliente.Localizacion.points[0].lng}&z=15&output=embed`}
         className={styles.iframe}
       ></iframe>
     </div>

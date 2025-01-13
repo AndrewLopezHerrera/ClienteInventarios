@@ -11,7 +11,7 @@ const ProveedorDetalle = () => {
     const nombreArchivoActual = partesRuta[partesRuta.length - 1];
     const idActual = parseInt(nombreArchivoActual);
     if (idActual) {
-      fetch(`http://172.203.140.102:4000/ConsultarProveedorEspecifico`, {
+      fetch(`https://172.203.140.102:4000/ConsultarProveedorEspecifico`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const ProveedorDetalle = () => {
         <div className={styles.mapa}>
           {/* Mapa con la localización */}
           <iframe
-            src={`https://maps.google.com/maps?q=${proveedor.Localizacion.points[0].lat},${proveedor.Localizacion.points[0].lng}&z=15&output=embed`}
+            src={`httpss://maps.google.com/maps?q=${proveedor.Localizacion.points[0].lat},${proveedor.Localizacion.points[0].lng}&z=15&output=embed`}
             className={styles.iframe}
             allowFullScreen=""
             loading="lazy"

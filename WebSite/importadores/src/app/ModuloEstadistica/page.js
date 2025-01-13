@@ -13,7 +13,7 @@ const Estadisticas = () => {
   const [categoriaCliente, setCategoriaCliente] = useState('');
 
   const mostrarProveedores = () => {
-    fetch('http://172.203.140.102:4000/MostrarEstadisticasProveedores', {
+    fetch('https://172.203.140.102:4000/MostrarEstadisticasProveedores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const Estadisticas = () => {
   };
 
   const mostrarClientes = () => {
-    fetch('http://172.203.140.102:4000/MostrarEstadisticasClientes', {
+    fetch('https://172.203.140.102:4000/MostrarEstadisticasClientes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
